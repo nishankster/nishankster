@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @nishankster
-- 👀 I’m interested in payments technologies, digitization of redundant processes and increasing efficiency of the world.
+- 👀 I’m interested in payments technologies, automation of redundant processes and increasing efficiency of the world.
 - 🌱 I’m currently learning Python, Smart Contracts, Payments Ecosystem.
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...

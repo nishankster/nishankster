@@ -35,7 +35,7 @@ header p {
 header::after {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: -100px;
     left: 0;
     right: 0;
     height: 20px;

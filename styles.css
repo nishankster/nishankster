@@ -11,7 +11,7 @@ body {
 header {
     text-align: center;
     padding: 100px 0;
-    background: linear-gradient(135deg, #3c85b5, #2680bf);
+    background: url('header-bg.jpg') no-repeat center center/cover;
     color: #fff;
 }
 
@@ -32,6 +32,20 @@ section {
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('section-bg.jpg') no-repeat center center/cover;
+    opacity: 0.2;
+    z-index: -1;
 }
 
 section h2 {

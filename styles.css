@@ -6,7 +6,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #233f63;
+    background: #f9f9f9;
     color: #333;
 }
 
@@ -38,7 +38,7 @@ header::after {
     bottom: -10px;
     left: 0;
     right: 0;
-    height: 200px;
+    height: 40px;
     background: url('wave.svg') repeat-x;
 }
 

@@ -35,10 +35,10 @@ header p {
 header::after {
     content: '';
     position: absolute;
-    bottom: -100px;
+    bottom: -10px;
     left: 0;
     right: 0;
-    height: 20px;
+    height: 200px;
     background: url('wave.svg') repeat-x;
 }
 

@@ -2,31 +2,61 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.parallax-window {
-    position: relative;
-    height: 100vh;
-    background: transparent;
-}
-
-.parallax-window .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+header {
+    background-color: #333;
     color: white;
+    padding: 1rem;
     text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 section {
     padding: 50px;
+    text-align: center;
 }
 
 h1, h2 {
     font-size: 2em;
+    margin-bottom: 10px;
 }
 
 p {
     font-size: 1.2em;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }

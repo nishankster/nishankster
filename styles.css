@@ -4,24 +4,23 @@ body, html {
     font-family: 'Arial', sans-serif;
 }
 
-.parallax {
-    background-image: url('your-image.jpg');
+.parallax-window {
+    position: relative;
     height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: transparent;
+}
+
+.parallax-window .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
 }
 
 section {
     padding: 50px;
-}
-
-#home .content {
-    text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 h1, h2 {

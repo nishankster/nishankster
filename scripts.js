@@ -5,4 +5,3 @@ document.addEventListener('DOMContentLoaded', function() {
         new Parallax(el);
     });
 });
-

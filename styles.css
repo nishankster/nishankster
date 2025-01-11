@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; /* Light gray background */
 }
 
 .container {
@@ -12,14 +12,15 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #333; /* Dark gray header */
   color: #fff;
   text-align: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 h1 {
   font-size: 2.5rem;
+  color: #fff; 
   margin-bottom: 0.5rem;
 }
 
@@ -27,6 +28,7 @@ p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  color: #555; /* Slightly darker gray for text */
 }
 
 nav ul {
@@ -44,10 +46,20 @@ nav li {
 nav a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s ease; 
+}
+
+nav a:hover {
+  color: #007bff; /* Blue hover color */
 }
 
 .section {
   padding: 4rem 0;
+}
+
+.section h2 {
+  color: #333; /* Dark gray for section headings */
+  margin-bottom: 1.5rem;
 }
 
 .gallery {
@@ -60,10 +72,11 @@ nav a {
   margin: 1rem;
   max-width: 250px;
   height: auto;
+  border: 1px solid #ddd; 
 }
 
 footer {
-  background-color: #333;
+  background-color: #333; /* Dark gray footer */
   color: #fff;
   text-align: center;
   padding: 1rem 0;

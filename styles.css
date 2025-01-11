@@ -2,7 +2,7 @@ body {
   font-family: Roboto;
   margin: 0;
   padding: 0;
-  background-color: #2796b8; /* Light gray background */
+  background-color: #333; /* Light gray background */
 }
 
 .container {
@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background-color: #2796b8; /* Dark gray header */
+  background-color: #ede3f5; /* #ede3f5 */
   color: #fff;
   text-align: center;
   padding: 2rem 0;

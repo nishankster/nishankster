@@ -1,83 +1,155 @@
+/* styles.css */
 body {
-  font-family: Aubrey;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #333; /* Light gray background */
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8; /* Softer background */
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
 }
 
+/* Header and Navigation */
 header {
-  background-color: #ede8f5; /* #ede3f5 */
-  color: #fff;
-  text-align: center;
-  padding: 2rem 0;
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: sticky; /* Sticky header */
+  top: 0;
+  z-index: 100;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #fff; 
-  margin-bottom: 0.5rem;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  color: #555; /* Slightly darker gray for text */
+.logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center;
 }
 
 nav li {
-  margin: 0 1rem;
+  margin-left: 20px;
 }
 
 nav a {
-  color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease; 
+  color: #555;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #007bff; /* Blue hover color */
+  color: #007bff;
 }
 
+/* Hero Section */
+.hero {
+  background-color: #e9f0ff; /* Light blue background */
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Sections */
 .section {
-  padding: 4rem 0;
+  padding: 80px 0;
 }
 
 .section h2 {
-  color: #333; /* Dark gray for section headings */
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
 }
 
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.skill {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Gallery */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .gallery img {
-  margin: 1rem;
-  max-width: 250px;
+  width: 100%;
   height: auto;
-  border: 1px solid #ddd; 
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer */
 footer {
-  background-color: #333; /* Dark gray footer */
+  background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 1rem 0;
+  padding: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10px;
+  }
+  nav li {
+      margin: 10px 0;
+  }
+  .hero h1 {
+      font-size: 2rem;
+  }
 }

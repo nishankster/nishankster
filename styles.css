@@ -140,16 +140,68 @@ footer {
 }
 
 /* Responsive adjustments */
+/* styles.css */
+/* ... (Existing CSS) */
+
+/* Basic Mobile Styles (adjust breakpoints as needed) */
 @media (max-width: 768px) {
+  .container {
+      padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  nav {
+      flex-direction: column; /* Stack nav items vertically */
+      align-items: flex-start; /* Align to the left on mobile */
+  }
+
   nav ul {
       flex-direction: column;
-      text-align: center;
+      width: 100%; /* Make the list take full width */
       margin-top: 10px;
+      text-align: center;
   }
+
   nav li {
-      margin: 10px 0;
+      margin: 10px 0; /* Add vertical margin between list items */
+      width: 100%;
+      text-align: center;
   }
+
+  nav a {
+    display: block;
+    padding: 10px;
+  }
+
+  .hero {
+      padding: 50px 0; /* Reduce hero padding */
+      min-height: auto;
+  }
+
   .hero h1 {
-      font-size: 2rem;
+      font-size: 2rem; /* Reduce font size */
+  }
+
+  .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust minmax */
+  }
+
+  .gallery {
+      grid-template-columns: 1fr; /* Single column gallery */
+  }
+  .parallax {
+    min-height: 300px;
+  }
+  .parallax-content{
+    padding: 20px;
+  }
+}
+
+/* Even smaller screens (e.g., very small phones) */
+@media (max-width: 480px) {
+  .hero h1 {
+      font-size: 1.5rem;
+  }
+  .parallax {
+    min-height: 200px;
   }
 }

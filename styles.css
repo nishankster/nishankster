@@ -138,6 +138,48 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center; /* Vertically align items */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-links a {
+  margin-left: 15px; /* Spacing between icons */
+}
+
+.social-links img {
+  width: 30px; /* Adjust icon size as needed */
+  height: 30px;
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.social-links img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Responsive adjustments for footer */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column; /* Stack content vertically */
+      text-align: center; /* Center text */
+      align-items: center;
+  }
+
+  .social-links {
+      margin-top: 10px; /* Add margin above social links */
+      margin-left: 0;
+  }
+  .social-links a{
+    margin: 0 10px;
+  }
+}
 
 /* Responsive adjustments */
 /* styles.css */
@@ -155,7 +197,7 @@ footer {
   }
 
   nav ul {
-      flex-direction: column;
+      flex-direction: row;
       width: 100%; /* Make the list take full width */
       margin-top: 10px;
       text-align: center;

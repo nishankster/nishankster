@@ -247,3 +247,39 @@ footer {
     min-height: 200px;
   }
 }
+
+
+header .social-links {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+header .social-links a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #000; /* Adjust color as needed */
+}
+
+header .social-links a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+.blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.blog-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
